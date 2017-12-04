@@ -14,52 +14,32 @@
                     </div> <img class="bg-user" src="/static/img/avatar-bg.png" alt="User Image"> </div>
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu">
-                    <li class="treeview">
-                        <a href="#"> <i class="ti-layout-media-overlay"></i> <span>Common Page</span> <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span> </a>
-                        <ul class="treeview-menu">
-                            <li class="active">
-                                <router-link to="/blank-page">
-                                    <avatar username="Blank Page" :size='20' color="#fff"></avatar> Blank Page</router-link>
-                            </li>
-                        </ul>
-                    </li>             
-                    <li class="treeview">
-                        <a href="#"> <i class="ti-layout-media-overlay"></i> <span>Common Page</span> <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span> </a>
-                        <ul class="treeview-menu">
-                            <li class="active">
-                                <router-link to="/blank-page">
-                                    <avatar username="Blank Page" :size='20' color="#fff"></avatar> Blank Page</router-link>
-                            </li>  
-                            <li class="active">
-                                <router-link to="/blank-page">
-                                    <avatar username="Blank Page" :size='20' color="#fff"></avatar> Blank Page</router-link>
-                            </li>  
-                            <li class="active">
-                                <router-link to="/blank-page">
-                                    <avatar username="Blank Page" :size='20' color="#fff"></avatar> Blank Page</router-link>
-                            </li>
-                        </ul>
+                    <li class="header">Mis Poderes</li>
+                    
+                    <!--
+                    <li>
+                        <router-link to="/challenges-list"> <i class="ti-email"></i> <span>Mail Apps</span> </router-link>
                     </li>
-                    <li class="header">DEVIN VUE 1.0.0</li>
-                    <li> <a href="http://ndesaintheme.com/devin/doc"><span>Documentation</span>
-                  <span class="pull-right-container">
-                  <i class="fa ti-agenda pull-right version"></i>
-                </span>
-                    </a></li>
-                    <li> <a href="#"><span>About</span>
-                  <span class="pull-right-container">
-                  <i class="fa ti-info-alt pull-right version"></i>
-                </span>
-                    </a></li>
-                    <li> <a href="#"><span>Feedback</span>
-                  <span class="pull-right-container">
-                  <i class="version fa ti-package pull-right"></i>
-                </span>
-                    </a></li>
+                    -->
+                    
+                    <li>
+                        <router-link to="/challenges-list">
+                            <i class="fa ti-cup"></i>
+                            <span>Mis Retos</span>
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link to="/advertisements-list">
+                            <i class="fa ti-announcement"></i>                            
+                            <span>Mis Anuncios</span>
+                        </router-link>
+                    </li>
+                    <li> 
+                        <router-link to="/promotions-list">  
+                            <i class="fa ti-package"></i>
+                            <span>Mis Promociones</span>
+                        </router-link>
+                    </li>
                     <li>
                         <br>
                         <br>

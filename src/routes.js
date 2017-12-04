@@ -1,6 +1,9 @@
 import Dashboard from './components/Dashboard.vue'
 import NotFound from './components/modules/dashboard/404.vue'
 import BlankPage from './components/modules/common-page/BlankPage.vue'
+import ChallengesList from './components/modules/challenges/ChallengesList.vue'
+import PromotionsList from './components/modules/promotions/PromotionsList.vue'
+import AdvertisementsList from './components/modules/advertisements/AdvertisementsList.vue'
 import Login from './components/Login.vue'
 import NotFoundSecond from './components/modules/dashboard/500.vue'
 
@@ -29,6 +32,18 @@ const routes = [
         path: '/login',
         name: 'login',
         component: Login
+      }, {
+        path: '/challenges-list',
+        name: 'challenges-list',
+        component: ChallengesList
+      }, {
+        path: '/advertisements-list',
+        name: 'advertisements-list',
+        component: AdvertisementsList
+      }, {
+        path: '/promotions-list',
+        name: 'promotions-list',
+        component: PromotionsList
       }, {
         path: '/blank-page',
         name: 'blank-page',

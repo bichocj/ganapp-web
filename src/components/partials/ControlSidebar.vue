@@ -2,7 +2,9 @@
     <div>
         <aside class="control-sidebar control-sidebar-light">
             <ul class="nav navbar-stacked ">
-                <li><a href="#"><span class="palette-Black-100 bg ti-menu-alt"></span>Notifications</a></li>
+                <li>
+                    <a href="#"><span class="palette-Black-100 bg ti-menu-alt"></span>Notifications</a>
+                </li>
                 <li><a href="#"><span class="palette-Deep-Purple-100 bg ti-menu-alt"></span><i class="ti-more-alt"></i><span class="palette-Deep-Purple-200 bg ti-shopping-cart-full"></span><i class="ti-more-alt"></i><span class="palette-Deep-Purple-400 bg ti-gift"></span><i class="ti-more-alt"></i><span class="palette-Deep-Purple-600 bg ti-truck"></span><i class="ti-more-alt"></i><span class="palette-Deep-Purple-800 bg ti-home"></span>Shipping proses of <strong>Robert Langdon</strong> is completed!<small>1m</small></a></li>
                 <li><a href="#"><span class="palette-Blue-A100 bg ti-user"></span>Meet new user <strong>Lilian Meirs</strong><small>23m</small></a></li>
                 <li><a href="#"><span class="palette-Red-A400 bg ti-cloud-down"></span><strong>Robert</strong> added new request for ne item for refund<small>34m</small></a></li>
