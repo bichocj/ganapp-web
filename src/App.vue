@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="wrapper">
+  <div id="app" class="wrapper" style="height:auto">
     <router-view></router-view>
   </div>
 </template>
@@ -10,6 +10,6 @@ export default {
 }
 </script>
 <style lang="scss">
-  @import "sass/main"
+  @import "sass/main"  
 </style>
 
