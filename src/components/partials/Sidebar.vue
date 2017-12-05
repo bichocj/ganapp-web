@@ -23,7 +23,7 @@
                     -->
                     
                     <li>
-                        <router-link to="/challenges-list">
+                        <router-link :to="{name:'challenges-list'}">
                             <i class="fa ti-cup"></i>
                             <span>Mis Retos</span>
                         </router-link>

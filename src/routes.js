@@ -2,6 +2,8 @@ import Dashboard from './components/Dashboard.vue'
 import NotFound from './components/modules/dashboard/404.vue'
 import BlankPage from './components/modules/common-page/BlankPage.vue'
 import ChallengesList from './components/modules/challenges/ChallengesList.vue'
+import ChallengesForm from './components/modules/challenges/ChallengesForm.vue'
+import ChallengesFormTwo from './components/modules/challenges/ChallengesFormTwo.vue'
 import PromotionsList from './components/modules/promotions/PromotionsList.vue'
 import AdvertisementsList from './components/modules/advertisements/AdvertisementsList.vue'
 import Login from './components/Login.vue'
@@ -33,9 +35,17 @@ const routes = [
         name: 'login',
         component: Login
       }, {
-        path: '/challenges-list',
+        path: '/challenges/list',
         name: 'challenges-list',
         component: ChallengesList
+      }, {
+        path: '/challenges/form',
+        name: 'challenges-form',
+        component: ChallengesForm
+      }, {
+        path: '/challenges/form-two',
+        name: 'challenges-form-two',
+        component: ChallengesFormTwo
       }, {
         path: '/advertisements-list',
         name: 'advertisements-list',

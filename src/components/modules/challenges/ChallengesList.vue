@@ -40,7 +40,7 @@
                             </el-select>
                         </div>
                         <div class="pull-right">
-                            <el-button type="primary">Crear Reto</el-button>
+                            <el-button type="primary" @click="navigateTo('challenges-form')">Crear Reto</el-button>
                         </div>
                         <div class="clearfix"></div>
                         <hr>
@@ -148,6 +148,11 @@
     data () {
       return {
         filterBy: 'next_challenges'
+      }
+    },
+    methods: {
+      navigateTo: function (nav) {
+        this.$router.push({name: nav})
       }
     }
   }
