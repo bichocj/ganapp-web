@@ -152,12 +152,22 @@
 
                             <div class="col-md-2" style="text-align: right; padding: 70px 0 0 0">                            
                                     <div style="position: fixed">
-                                    <el-button type="primary" >Guardar y Publicar</el-button>    
+                                    <el-button type="primary" @click="dialogFormVisible = true">Guardar y Publicar</el-button>    
                                         <div class="clearfix"></div>
                                         <br>
                                     <el-button type="default" @click="navigateTo('challenges-list')" style="width:100%">Cancelar</el-button>
-                                    </div>
+                                    </div>                                
                             </div>
+                            <el-dialog title="Tu reto se verá asi" :visible.sync="dialogFormVisible">
+                              aqui mostrar las imagenes con el celular en ambas interfaces
+                              <span slot="footer" class="dialog-footer">
+                                <div class="">¿Te gusta como ha quedado?</div>
+                                <br>
+                                <el-button @click="dialogFormVisible = false">No, continuar editando</el-button>
+                                <el-button type="primary" @click="dialogFormVisible = false">Si, publicar ahora</el-button>
+                              </span>
+                            </el-dialog>
+
                         </div>
                     </div>
                 </div>
@@ -172,7 +182,8 @@
     name: 'ChallengesFormTwo',
     data: function () {
       return {
-        fileList: []
+        fileList: [],
+        dialogFormVisible: false
       }
     },
     methods: {
@@ -191,5 +202,8 @@
 <style lang="scss">
     .el-upload__input{
         display: none!important;
+    }
+    .el-dialog__footer{
+        text-align: center!important;
     }
 </style>
