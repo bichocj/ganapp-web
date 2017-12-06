@@ -3,6 +3,7 @@ import NotFound from './components/modules/dashboard/404.vue'
 import BlankPage from './components/modules/common-page/BlankPage.vue'
 import ChallengesList from './components/modules/challenges/ChallengesList.vue'
 import ChallengesForm from './components/modules/challenges/ChallengesForm.vue'
+import ChallengesWinners from './components/modules/challenges/ChallengesWinners.vue'
 import ChallengesFormTwo from './components/modules/challenges/ChallengesFormTwo.vue'
 import PromotionsList from './components/modules/promotions/PromotionsList.vue'
 import AdvertisementsList from './components/modules/advertisements/AdvertisementsList.vue'
@@ -42,6 +43,10 @@ const routes = [
         path: '/challenges/form',
         name: 'challenges-form',
         component: ChallengesForm
+      }, {
+        path: '/challenges/winners',
+        name: 'challenges-winners',
+        component: ChallengesWinners
       }, {
         path: '/challenges/form-two',
         name: 'challenges-form-two',
