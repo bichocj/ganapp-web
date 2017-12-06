@@ -4,6 +4,7 @@ import Resource from 'vue-resource'
 import VueRouter from 'vue-router'
 import routes from './routes'
 import store from './store'
+import ImageUploader from './components/utils/image-uploader'
 
 // Resource logic
 Vue.use(Resource)
@@ -11,6 +12,7 @@ Vue.http.options.emulateJSON = true
 Vue.use(VueRouter)
 Vue.use(ElementUI)
 Vue.use(ElementUI, {locale: 'en'})
+Vue.component('image-uploader', ImageUploader)
 
 // Import top level component
 import App from './App.vue'

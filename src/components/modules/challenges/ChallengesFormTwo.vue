@@ -32,13 +32,12 @@
 
                                         <div class="input-box">
                                             <h5>Imagen representativa</h5>                                    
-                                            <el-upload
-                                              action="https://jsonplaceholder.typicode.com/posts/"
-                                              list-type="picture-card"
-                                              :on-preview="handlePictureCardPreview"
-                                              :on-remove="handleRemove">
-                                              <i class="el-icon-plus"></i>
-                                            </el-upload>                                                                                    
+                                            
+                                            <image-uploader 
+                                              width="360px" 
+                                              height="170px">
+                                            </image-uploader>
+                                                                                                                            
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -205,5 +204,10 @@
     }
     .el-dialog__footer{
         text-align: center!important;
+    }
+    .image-uploader {
+      position: absolute;
+      margin: 0px 11px;
+      left: 0;
     }
 </style>
