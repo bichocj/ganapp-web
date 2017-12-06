@@ -79,13 +79,10 @@
                                             <div class="col-md-4">
                                                 <div class="input-box">
                                                     <h5>Imagen representativa</h5>                                    
-                                                    <el-upload
-                                                      action="https://jsonplaceholder.typicode.com/posts/"
-                                                      list-type="picture-card"
-                                                      :on-preview="handlePictureCardPreview"
-                                                      :on-remove="handleRemove">
-                                                      <i class="el-icon-plus"></i>
-                                                    </el-upload>
+                                                    <image-uploader 
+                                                      width="150px" 
+                                                      height="160px">
+                                                    </image-uploader>
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
@@ -108,13 +105,10 @@
                                             <div class="col-md-4">
                                                 <div class="input-box">
                                                     <h5>Imagen representativa</h5>                                    
-                                                    <el-upload
-                                                      action="https://jsonplaceholder.typicode.com/posts/"
-                                                      list-type="picture-card"
-                                                      :on-preview="handlePictureCardPreview"
-                                                      :on-remove="handleRemove">
-                                                      <i class="el-icon-plus"></i>
-                                                    </el-upload>
+                                                    <image-uploader 
+                                                      width="150px" 
+                                                      height="160px">
+                                                    </image-uploader>
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
