@@ -3,7 +3,7 @@
         <div class="content-wrapper">
        <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1>Nombre del Reto</h1>
+            <!-- <h1>Nombre del Reto</h1> -->
             <ol class="breadcrumb">
                 <li><router-link to="/"> <i class="ti-home"></i></router-link></li>                
                 <li><router-link :to="{name:'challenges-list'}">Mis Retos</router-link></li>
@@ -20,10 +20,10 @@
                     -->
                     <div class="box-body" style="min-height:400px;">
                         <div class="row">
-                            <div class="col-md-9">
+                            <div class="col-md-10">
                                 <h2>Nombre del Reto</h2>
-                                <span><i class="ti-star"></i> 4 personas siguiendo este reto</span> 
-                                <span><i class="ti-game"></i> 200 personas jugaron este reto</span> 
+                                <span class="stat"><i class="ti-star"></i> 4 personas siguiendo este reto</span> 
+                                <span class="stat"><i class="ti-game"></i> 200 personas jugaron este reto</span> 
                                 <hr>
                                 <div class="row">
                                     <div class="col-md-3">
@@ -47,8 +47,8 @@
                                     <div class="winners">
                                         <div class="winner-award">
                                             <div class="row header">
-                                                <div class="col-md-6">Nombre del premio</div>
-                                                <div class="col-md-6" style="text-align: right">
+                                                <div class="col-md-6 title">Nombre del premio</div>
+                                                <div class="col-md-6 more-info">
                                                     <span>Cantidad: 1</span>
                                                     <span>Entregados 1</span>
                                                 </div>
@@ -59,60 +59,84 @@
                                                 </div>
                                                 <div class="col-md-9">
                                                     <div class="col-md-4 winner-award-person">
-                                                        <img src="https://placeimg.com/150/150/people" class="img-circle ">
-                                                        <span>Nombre del usuario</span>
-                                                        <span>Teléfono: 95866981</span>                                                       
+                                                        <div class="box">
+                                                            <img src="https://placeimg.com/130/130/people" class="img-circle ">
+                                                            <span class="name">Nombre del usuario</span>
+                                                            <span class="phone">telf: 95866981</span>     
+                                                            <span class="state"></span>     
+                                                        </div>                                                  
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="winner-award">
                                             <div class="row header">
-                                                <div class="col-md-6">Nombre del premio</div>
-                                                <div class="col-md-6" style="text-align: right">
+                                                <div class="col-md-6 title">Nombre del premio</div>
+                                                <div class="col-md-6 more-info">
                                                     <span>Cantidad: 1</span>
                                                     <span>Entregados 1</span>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-3 winner-award-info">
-                                                    <img src="https://placeimg.com/150/150/tech">
+                                                    <img src="https://placeimg.com/130/130/tech">
                                                 </div>
                                                 <div class="col-md-9">
                                                     <div class="col-md-4 winner-award-person">
-                                                        <img src="https://placeimg.com/150/150/people" class="img-circle ">
-                                                        <span>Nombre del usuario</span>
-                                                        <span>Teléfono: 95866981</span>                                                       
+                                                        <div class="box">
+                                                            <img src="https://placeimg.com/130/130/people" class="img-circle ">
+                                                            <span class="name">Nombre del usuario</span>
+                                                            <span class="phone">telf: 95866981</span> 
+                                                            <span class="state">Entregado</span>     
+                                                        </div>
                                                     </div>
                                                     <div class="col-md-4 winner-award-person">
-                                                        <img src="https://placeimg.com/150/150/people" class="img-circle ">
-                                                        <span>Nombre del usuario</span>
-                                                        <span>Teléfono: 95866981</span>                                                       
+                                                        <div class="box">
+                                                            <img src="https://placeimg.com/130/130/people" class="img-circle ">
+                                                            <span class="name">Nombre del usuario</span>
+                                                            <span class="phone">telf: 95866981</span> 
+                                                            <span class="state"></span>     
+                                                        </div>
                                                     </div>
                                                     <div class="col-md-4 winner-award-person">
-                                                        <img src="https://placeimg.com/150/150/people" class="img-circle ">
-                                                        <span>Nombre del usuario</span>
-                                                        <span>Teléfono: 95866981</span>                                                       
+                                                        <div class="box">
+                                                            <img src="https://placeimg.com/130/130/people" class="img-circle ">
+                                                            <span class="name">Nombre del usuario en dos lineas</span>
+                                                            <span class="phone">telf: 95866981</span> 
+                                                            <span class="state"></span>     
+                                                        </div>
                                                     </div>
                                                     <div class="col-md-4 winner-award-person">
-                                                        <img src="https://placeimg.com/150/150/people" class="img-circle ">
-                                                        <span>Nombre del usuario</span>
-                                                        <span>Teléfono: 95866981</span>                                                       
+                                                        <div class="box">
+                                                            <img src="https://placeimg.com/130/130/people" class="img-circle ">
+                                                            <span class="name">Nombre del usuario</span>
+                                                            <span class="phone">telf: 95866981</span> 
+                                                            <span class="state"></span>     
+                                                        </div>
                                                     </div>
                                                     <div class="col-md-4 winner-award-person">
-                                                        <img src="https://placeimg.com/150/150/people" class="img-circle ">
-                                                        <span>Nombre del usuario</span>
-                                                        <span>Teléfono: 95866981</span>                                                       
+                                                        <div class="box">
+                                                            <img src="https://placeimg.com/130/130/people" class="img-circle ">
+                                                            <span class="name">Nombre del usuario</span>
+                                                            <span class="phone">telf: 95866981</span> 
+                                                            <span class="state"></span>     
+                                                        </div>
                                                     </div>
                                                     <div class="col-md-4 winner-award-person">
-                                                        <img src="https://placeimg.com/150/150/people" class="img-circle ">
-                                                        <span>Nombre del usuario</span>
-                                                        <span>Teléfono: 95866981</span>                                                       
+                                                        <div class="box">
+                                                            <img src="https://placeimg.com/130/130/people" class="img-circle ">
+                                                            <span class="name">Nombre del usuario en dos lineas</span>
+                                                            <span class="phone">telf: 95866981</span> 
+                                                            <span class="state">Entregado</span>     
+                                                        </div>
                                                     </div>
                                                     <div class="col-md-4 winner-award-person">
-                                                        <img src="https://placeimg.com/150/150/people" class="img-circle ">
-                                                        <span>Nombre del usuario</span>
-                                                        <span>Teléfono: 95866981</span>                                                       
+                                                        <div class="box">
+                                                            <img src="https://placeimg.com/130/130/people" class="img-circle ">
+                                                            <span class="name">Nombre del usuario</span>
+                                                            <span class="phone">telf: 95866981</span> 
+                                                            <span class="state"></span>     
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -122,7 +146,7 @@
                                 </div>                                    
                             </div>
 
-                            <div class="col-md-1"></div>
+                            
 
                             <div class="col-md-2" style="text-align: right; padding: 70px 0 0 0">                            
                                     <div style="position: fixed">                                    
@@ -162,15 +186,49 @@
   }
 </script>
 <style lang="scss">
-    .el-upload__input{
-        display: none!important;
+    .stat {
+        margin-right: 15px;
     }
-    .el-dialog__footer{
-        text-align: center!important;
-    }
-    .image-uploader {
-      position: absolute;
-      margin: 0px 11px;
-      left: 0;
+    .winners {
+        margin-left:15px;
+        .winner-award {
+            border-bottom: 1px solid #eee;            
+            padding-bottom: 10px;
+            margin-top: 30px;
+            .header {
+                border-bottom: 1px solid #eee;
+                margin: 10px 0;                
+                .title {
+                    font-size: 16px;
+                    padding: 0;
+                }            
+                .more-info {
+                    text-align: right;
+                    padding: 0;
+                    span {
+                        margin-right: 5px;               
+                    }  
+                }
+            }
+        }
+        .winner-award-person {            
+            text-align: center;
+            .box {
+                /* border: 1px solid #eee;     */
+                .name{
+                    min-height: 30px;
+                }
+                .phone, .name{
+                    font-size: 12px;
+                }
+                .state{
+                    font-size: 10px;
+                    min-height: 15px;
+                }
+                span{
+                    display:block;
+                }
+            }
+        }
     }
 </style>

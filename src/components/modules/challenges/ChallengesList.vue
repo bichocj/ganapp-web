@@ -114,7 +114,7 @@
                                         <div class="stats">
                                             <span class="stat"><i class="ti-star"></i> 20</span>
                                         </div>
-                                        <el-button>Ver</el-button>
+                                        <el-button @click="navigateTo('challenges-winners')">Ver Ganadores</el-button>
                                     </div>
                                 </div>
                             </div>
